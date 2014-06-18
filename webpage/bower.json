@@ -1,0 +1,28 @@
+{
+  "name": "SocketWeb",
+  "version": "1.0.0",
+  "authors": [
+    "Rodrigo Lopes <rodlps22@gmail.com>"
+  ],
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "*",
+    "bootstrap": "~3.1.1",
+    "fontawesome": "~4.1.0",
+    "phaser": "~1.1.5"
+  }
+}

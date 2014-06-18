@@ -1,0 +1,40 @@
+doctype html
+html
+  head
+    title FlappyRemote
+    / metatags
+    meta content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" name="viewport" /
+    / vendor styles
+    link href="css/style.min.css" rel="stylesheet" /
+    / vendor application
+    
+    script src="lib/js/ionic.bundle.min.js" 
+    / script src="lib/js/socket.js" 
+    script src='http://localhost:4000/socket.io/socket.io.js'
+    script src="lib/js/angular-resource.min.js" 
+    script src="lib/js/moment.min.js" 
+    script src="lib/js/angular-moment.min.js" 
+    / script src="cordova.js" 
+    
+    script src="js/app.min.js" 
+    script src="js/controllers.min.js" 
+    script src="js/services.min.js" 
+    script src="js/directives.min.js" 
+    script src="js/filters.min.js" 
+    
+  body ng-app="kzApp" ng-controller="appController" 
+    ion-side-menus
+      ion-side-menu-content
+        ion-nav-bar.bar-positive.nav-title-slide-ios7
+          ion-nav-back-button.button-clear.button.button-icon.icon.icon-right
+            i.ion-arrow-left-c
+        ion-nav-view animation="slide-left-right" 
+      ion-side-menu.menu-left side="left" 
+        header.bar.bar-header.bar-stable
+          h1.title
+        ion-content.has-header
+          ion-list
+            ion-item menu-close="" nav-clear="" ui-sref="welcome" ui-sref-active="active" 
+              .menu-icon
+                i.icon.ion-home
+              span.left-5 Homescreen

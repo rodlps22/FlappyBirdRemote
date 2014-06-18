@@ -1,0 +1,11 @@
+{
+  "name": "FlappyBirdRemote",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.0.0-beta.6",
+    "angular-resource": "~1.2.16",
+    "angular-moment": "~0.7.1",
+    "angular-socket-io": "~0.3.0"
+
+  }
+}

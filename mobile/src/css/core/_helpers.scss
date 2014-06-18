@@ -1,0 +1,55 @@
+// *************************************
+//
+//   Helpers
+//   -> Extends, Functions, Mixins, Animations
+//
+// *************************************
+
+// -------------------------------------
+//   Extends
+// -------------------------------------
+
+// ----- Debug ----- //
+
+// -------------------------------------
+//   Functions
+// -------------------------------------
+
+// ----- em ----- //
+
+@function em($target, $context: $base-fontSize){
+  @if ($target == 0){
+    @return 0;
+  }
+  @else{
+    @return #{$target / $context}em;
+  }
+}
+// ----- rem ----- //
+
+@function rem($size){
+  @return #{$size / $base-fontSize}rem;
+}
+
+// -------------------------------------
+//   Mixins
+// -------------------------------------
+
+// ----- Respond-to ----- //
+
+// =respond-to($val, $query: min-width, $media: screen){
+//   @media #{$media} and ($query: $val){
+//     @content;
+//   }
+// }
+
+@mixin center-both ( $height, $width ){
+  left: 50%;
+  top: 50%;
+  margin-left: -$width / 2;
+  margin-top: -$height / 2;
+}
+// -------------------------------------
+//   Animations
+// -------------------------------------
+

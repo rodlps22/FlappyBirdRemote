@@ -1,0 +1,10 @@
+[Tt]humbs.db
+.DS_Store
+*.DS_Store
+*.log
+*.tmp
+
+node_modules/
+bower_components/
+src/lib/
+www/

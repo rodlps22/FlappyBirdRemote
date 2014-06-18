@@ -1,0 +1,22 @@
+ion-view title="Welcome" 
+  ion-content
+    .row
+      .col style="text-align:center;"
+        h2
+          | {{status}} &nbsp;
+          small 
+            | &nbsp;{{score_game}}
+    .row
+      .col-50
+        button.button.button-block.button-assertive ng-click="reconect()"
+          i.icon.ion-power
+          | &nbsp; Reconect
+      .col-50
+        button.button.button-block.button-energized ng-click="play()" ng-disabled="!enabled"
+          i.icon.ion-play
+          | &nbsp; Play
+
+    .row
+      button.button.button-block.button-royal ng-click="jump()" ng-disabled="!enabled"
+        i.icon.ion-arrow-up-a
+        | &nbsp; Jump

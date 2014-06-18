@@ -1,0 +1,12 @@
+extends layouts/default
+
+block scripts
+  script(src="/javascripts/module.js")
+  script(src="/javascripts/game.js")
+
+
+block content
+  h1 Flappy Bird Remote &nbsp;
+    small#status Game
+  hr 
+  div#game_div(style="display:none")

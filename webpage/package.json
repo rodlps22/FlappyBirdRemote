@@ -1,0 +1,23 @@
+{
+    "name": "FlappyBirdRemote",
+    "description": "Flappy Bird Remote",
+    "version": "0.0.1",
+    "engines": {
+        "node": ">=0.10.0",
+        "npm": ">=1.1"
+    },
+    "dependencies": {
+        "express": "~3.4.7",
+        "express.io": "latest",
+        "express-train": "2.1.x",
+        "jade": "*",
+        "less-middleware": "*"
+    },
+    "devDependencies": {
+        "nodemon" : "*"
+    },
+    "scripts": {
+        "start": "nodemon app.js"
+    },
+    "main": "./app.js"
+}

@@ -1,0 +1,16 @@
+extends layouts/default
+
+block scripts
+  script(src="/javascripts/remote.js")
+
+block content
+  h3 Flappy Bird Remote&nbsp;
+      small#status Controller!
+  hr
+  .row 
+    .col-xs-4
+      button.btn.btn-warning.btn-block#reconnect Reconect
+    .col-xs-4
+      button.btn.btn-danger.btn-block#start Start
+    .col-xs-4
+      button.btn.btn-primary.btn-block#jump Jump!
